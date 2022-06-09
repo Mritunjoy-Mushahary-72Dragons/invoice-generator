@@ -1,0 +1,156 @@
+#alertM,
+#alertT,
+#alertR,
+#alertP,
+#alertBtns {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #720d1b;
+  font-weight: 300;
+  font-size: 13px;
+  text-align: left;
+}
+
+#alertR,
+#alertBtns a {
+  text-decoration: none;
+}
+
+#hbg {
+  width: 100%;
+  position: absolute;
+  background: #000;
+  z-index: 998;
+  /* 设置层级，主要是为了遮住页面内的其他内容 */
+  top: 0;
+  left: 0;
+  height: 100%;
+  /* 随便填，超过整屏高度就行，后面由js控制 */
+  opacity: 0.6; /* ie8及以下浏览器看不到效果，我也懒的给你写filter，换其他的现代浏览器吧 */
+}
+
+#alertM {
+  position: absolute;
+  /* 绝对定位，为了以后控制方便 */
+  top: 200px;
+  background: #ae943f;
+  z-index: 999;
+  /* 层级，当然要比背景高1啦，要不你怎么看见 */
+  max-width: 400px;
+  width: 100%;
+  min-height: 100px;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top: -50px;
+  border: 1px #000 solid;
+}
+
+.dialogHead {
+  width: 95%;
+  display: flex;
+  position: relative;
+  border-bottom: 1px #720d1b solid;
+  margin: auto;
+  padding: 5px;
+}
+
+#alertT {
+  /* margin: 4px;
+    padding: 5px; */
+  /* background: #720d1b; */
+  color: #720d1b;
+  /* border-bottom: 1px #AE943F solid; */
+  font-size: 24px;
+}
+
+.dialogBody {
+  padding: 5px;
+}
+
+#alertP {
+  padding: 5px;
+  max-width: 400px;
+  word-wrap: break-word;
+}
+
+#alertR {
+  position: absolute;
+  right: 0px;
+  font-size: 24px;
+  color: #720d1b;
+  font-weight: bold;
+}
+
+#alertR:hover {
+  color: #000;
+}
+
+#alertBtns {
+  text-align: right;
+}
+
+#alertBtns button,
+#alertBtns #alertN {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+  color: #000;
+  display: inline-block;
+  width: 64px !important;
+  height: 25px !important;
+  color: #000;
+  background: #ae943f;
+  border: 1px solid #000000;
+  cursor: pointer;
+  /* border: none; */
+}
+
+#alertBtns a:hover {
+  /* background: #ae9437; */
+  /* border: 1px #ae9437 solid; */
+  /* color: #000; */
+}
+
+#alertBtns a:active {
+  background: #bbb;
+  border: 1px #aaa solid;
+}
+
+@media only screen and (max-width: 768px) {
+  #alertM {
+    position: absolute;
+    top: 200px;
+    background: #ae943f;
+    z-index: 999;
+    max-width: 400px;
+    width: 95%;
+    min-height: 100px;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    margin-left: -140px;
+    margin-top: -50px;
+    border: 1px #000 solid;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #alertM {
+    position: absolute;
+    top: 200px;
+    background: #ae943f;
+    z-index: 999;
+    max-width: 400px;
+    width: 95%;
+    min-height: 100px;
+    height: auto;
+    left: 2vw;
+    margin-left: 0px;
+    margin-top: 0px;
+    border: 1px #000 solid;
+  }
+}

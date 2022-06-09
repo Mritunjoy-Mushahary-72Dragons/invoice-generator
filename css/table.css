@@ -1,0 +1,141 @@
+      input[type=text], select{
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ad9440;
+  border-radius: 4px;
+  background-color: #000000;
+  color: #ad9440;
+  margin-bottom: 15px; 
+  margin-top: 12px;
+}
+        .container {
+          display: block;
+          position: relative;
+          margin-bottom: 25px;
+          cursor: pointer;
+          /*font-size: 18px;*/
+        }
+
+        /* Hide the default checkbox */
+        .container input {
+          visibility: hidden;
+          cursor: pointer;
+        }
+
+        /* Create a custom checkbox */
+        .mark {
+         position: absolute;
+        top: 42px;
+       /* left: px;*/
+        height: 15px;
+        width: 15px;
+        background: transparent;
+        border:1px solid #ad9440;
+        }
+
+        .container input:checked ~ .mark {
+         /*background-color: #ad9440;*/
+        }
+
+        /* Create the mark/indicator (hidden when not checked) */
+        .mark:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+
+        /* Show the mark when checked */
+        .container input:checked ~ .mark:after {
+          display: block;
+        }
+
+        /* Style the mark/indicator */
+        .container .mark:after {
+             left: 4px;
+            width: 4px;
+            height: 10px;
+          border: solid #ad9440;
+          border-width: 0 3px 3px 0;
+          transform: rotate(45deg);
+        }
+.contain{
+    /*background-color: #141415;*/
+        padding: 26px;
+}
+table, th, td{
+ 
+    border-collapse:collapse;
+    text-align: left;
+    font-family: Arial;
+    padding: 4px;
+    }
+h3{
+    text-align: center;
+    position: relative;
+    padding-top: 80px
+}
+.tr_fst{
+    border: 1px solid;
+}
+.td_fst{
+    border-left:1px solid;
+
+}
+.th_fst{
+    padding-left: 0px;
+}
+#log{
+    width: 100px; 
+    float: right; 
+    padding-right: 50px;
+}
+#sty{
+    border: 1px solid; 
+    border-left-color: white;
+    border-right-color: white;
+    /*border-bottom: 1px solid;*/
+    /*background-color: red;*/
+    padding: 0px;
+} 
+   #dis
+    {position: absolute;
+    top: 2px;
+    left: 868px; 
+    height: 15px;
+    width: 15px;
+    background: transparent;
+    border: 1px solid #ad9440;   
+    }
+
+       .btn-sm{
+            text-align: center;
+                        padding: 35px;
+
+        }
+        .btn-sm button{
+            margin: 0px;
+        background-color: #ae943f;
+        border: 1px solid #ae943f;
+        border-radius: 2px;
+        padding: 5px 9px;
+        }
+        .main_first{
+            border: 2px solid;
+            margin-top: 100px;
+        }
+        .second_main{
+            border: 2px solid;
+            margin-top: 150px;
+        }
+        .footer{
+            text-align: left; 
+            margin:74px 0px 33px 72px;
+        }
+        .footer1{
+            text-align: left; 
+            margin:96px 0px 33px 45px;
+        }
+
+
+
+      
