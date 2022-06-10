@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=], initial-scale=1.0">
     <title>Invoice page</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" type="text/css" href="//use.fontawesome.com/releases/v5.7.2/css/all.css">
 
 
 </head>
@@ -197,16 +199,28 @@
 
 
     <div class="header">
+        <button style="padding:8px; border: 1px solid black;background-color: #ae943f; border-radius: 8px; ">
+            <a style="text-decoration:none; color: black;" href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i> Go Back</a>
+        </button>
+
 
         <h1 style=" margin: auto;
    width: 200px; font-weight: 900; color: #ae943f; ">
+            <i class="fas fa-file-invoice"></i>
+
             Invoice List Page
+
         </h1>
     </div>
 
 
 
-
+    <style>
+        #icon {
+            vertical-align: middle;
+            font-size: 40px;
+        }
+    </style>
 
 
 
@@ -242,9 +256,9 @@
 
                     <td>
                         <span class="action_btn">
-                            <a href="#">Edit</a>
-                            <a href="#">Delete</a>
-                            <a href="#">View</a>
+                            <a href="#"><i class="fas fa-edit"></i></a>
+                            <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
 
                         </span>
                     </td>
@@ -256,9 +270,9 @@
 
                     <td>
                         <span class="action_btn">
-                            <a href="#">Edit</a>
-                            <a href="#">Delete</a>
-                            <a href="#">View</a>
+                            <a href="#"><i class="fas fa-edit"></i></a>
+                            <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
                         </span>
                     </td>
                 </tr>
@@ -268,9 +282,9 @@
 
                     <td>
                         <span class="action_btn">
-                            <a href="#">Edit</a>
-                            <a href="#">Delete</a>
-                            <a href="#">View</a>
+                            <a href="#"><i class="fas fa-edit"></i></a>
+                            <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
                         </span>
                     </td>
                 </tr>
