@@ -1,11 +1,28 @@
 <?php include "templates/header.php"; ?>
 
 
+<!-- 
+    ----------------------------------------------
+    HEADER CODE - START
+    ---------------------------------------------- 
+-->
+
+<!-- 
+    ----------------------------------------------
+    HEADER CODE - END
+    ---------------------------------------------- 
+-->
+
+
+
+
+
+
                     <a class="new" href="invoice.php">Create a New Invoice</a>
 <center>
 <div id="main">
 <?php
-include "api.php";
+//include "api.php";
 if(isset($_GET['invoice_id']))
 {
 //print_r($_GET);
