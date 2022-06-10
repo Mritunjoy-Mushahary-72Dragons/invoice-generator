@@ -1,27 +1,27 @@
 <?php 
-session_start();
-include "api.php";
-if(isset($_GET['invoice_id']))
-{
-      $obj=new sheet();
-      $_POST['invoice_id']=$_GET['invoice_id'];
-      $main_data=$obj->list_invoice($_POST);
-//    echo "<pre>";   print_r($main_data);
-}
-else
-{
-  // echo "d";
-  //header("Location:/login.php");
-}
-if(!isset($_SESSION['user_id']))
-{
-  header("Location:login.php");
-}
+// session_start();
+// include "api.php";
+// if(isset($_GET['invoice_id']))
+// {
+//       $obj=new sheet();
+//       $_POST['invoice_id']=$_GET['invoice_id'];
+//       $main_data=$obj->list_invoice($_POST);
+// //    echo "<pre>";   print_r($main_data);
+// }
+// else
+// {
+//   // echo "d";
+//   //header("Location:/login.php");
+// }
+// if(!isset($_SESSION['user_id']))
+// {
+//   header("Location:login.php");
+// }
  ?>
 <!DOCTYPE html>
 <html>
 <head>
-        <title></title>
+        <title>Invoice Page</title>
            <link rel="stylesheet" href="css/invoice.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,21 +31,35 @@ if(!isset($_SESSION['user_id']))
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
     <body class="inv">
+
+    
                 <div>
-                  
-                    <h2> Invoice Generator</h2>
-                   
+                 
+                    <h2>
+                    <i class="fas fa-file-invoice"></i>
+                    Invoice Generator</h2>
+                     <button  style="padding:8px; border: 1px solid black;background-color: #ae943f; margin-left: 20px; border-radius: 8px; " >
+                      <a  style="text-decoration:none; color: black;"  href=""><i class="fa fa-arrow-left" aria-hidden="true"></i> Go Back</a>
+                     </button>
                 </div>
-                <button style="background-color:gold; float:right; margin-top: 10px; margin-right:20px;padding:5px">
-                  <a  style="float:right ; text-decoration:none; color:black;background-color:gold ;border: radius 2px;" href="login-api.php?api=LogOut">Logout</a>
+                <button style="background-color:#ae943f; float:right; margin-top: 10px; margin-right:20px;padding:5px;border-radius: 8px;">
+                  <a  style="float:right ; text-decoration:none;color:black; " href="login-api.php?api=LogOut">Logout</a>
                 </button>
 
                 
-                <button  style="background-color:gold;  margin-top: 10px;    margin-left:700px; margin-right:20px;padding:10px"     onclick="window.location.href='invoicelist.page.php'"  class="btn"><i class="fa fa-bars">
+                <button  style="background-color:#ae943f;  margin-top: 10px;    margin-left:700px; margin-right:20px;padding:10px; border-radius: 8px; cursor:pointer "     onclick="window.location.href='invoicelist.page.php'"  class="btn"><i class="fa fa-bars">
                   
                 </i> Invoice List</button>
 
 
+
+
+                <style>
+                  #icon {
+        vertical-align: middle;
+        font-size: 30px;
+      }
+                </style>
 
 
 <input type="hidden" name="bill_id" value="<?php echo $_GET['invoice_id']; ?>">
