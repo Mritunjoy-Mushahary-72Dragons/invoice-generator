@@ -25,10 +25,11 @@ else
     integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" />
     <!-- <link href="./css/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="css/index.css" />
-  <link rel="stylesheet" type="text/css" href="css/dialog.css" />
+  <link rel="stylesheet" type="text/css" href="/css/dialog.css" />
 </head>
 
 <body class="login-body">
+
   <div class="row" id="login_container">
     <div class="hbg"></div>
     <div class="forget-password">
@@ -44,14 +45,14 @@ else
     </div>
     <div class="column left" style="background-color: #141414;">
       <div class="login-bg-img">
-        <img src="/img/72logo.png" alt="" />
+        <img src="img/72logo.png" alt="" />
       </div>
     </div>
     <div class="column right" style="background-image: linear-gradient(-135deg, #ffffff, #ad9440);">
       <form action="#" id="backlog-form" autocomplete="on">
         <h2 class="login-title">Online Training Tool</h2>
         <div class="login-img">
-          <img src="/img/72logo.png" alt="" />
+          <img src="img/72logo.png" alt="" />
         </div>
         <div class="input-group">
           <span class="input-group-addon"><i class="fas fa-envelope"></i></span>

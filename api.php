@@ -581,8 +581,8 @@ public static function crty_list($details) {
 					}
 	}
 
-		return $data;
-	}
+	return $data;
+}
 
 
 	public static function user_list($details) {

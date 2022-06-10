@@ -10,7 +10,7 @@ header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST');
 header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token');
 session_start();
-include('./db.php');
+include('db.php');
 class StaffMember {
 
     //Log the staff member in by the username, password, and unique token provided. Will redirect to the url provided if the $redirect variable is not null
@@ -66,6 +66,7 @@ class StaffMember {
 
                 // session_unset(); 
                 // session_destroy();
+                header("Location:login.php");
      }
     public static function random_code($length = 8) {
         // 密码字符集，可任意添加你需要的字符

@@ -10,13 +10,13 @@ if(isset($_GET['invoice_id']))
 }
 else
 {
-//    echo "d";
+  // echo "d";
   //header("Location:/login.php");
-// }
-// if(!isset($_SESSION['user_id']))
-// {
-//   header("Location:login.php");
-// }
+}
+if(!isset($_SESSION['user_id']))
+{
+  header("Location:login.php");
+}
  ?>
 <!DOCTYPE html>
 <html>
@@ -32,6 +32,9 @@ else
                 <div>
                     <h2>Invoice Generator</h2>
                 </div>
+                <button style="background-color:gold; float:right; margin-top: 10px; margin-right:20px;padding:3px">
+                  <a  style="float:right ; text-decoration:none; color:black;background-color:gold ;border: radius 2px;" href="login-api.php?api=LogOut">Logout</a>
+                </button>
 <input type="hidden" name="bill_id" value="<?php echo $_GET['invoice_id']; ?>">
         <div class="input-group">
                 <label class="profile-info">Date:</label>
