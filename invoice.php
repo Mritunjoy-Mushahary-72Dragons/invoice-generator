@@ -29,11 +29,74 @@
     integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" />
   <link rel="stylesheet" href="/css/all.min.css" >
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+.header {
+            overflow: hidden;
+            background-color: #800000;
+            padding: 8px 10px;
+        }
+
+        .header h1 {
+            margin-right: 100px;
+            float: right;
+            color: black;
+            font-size: 18px;
+
+        }
+
+  </style>
 </head>
+<br>
+
+
     <body class="inv">
 
+   <!-- 
+    ----------------------------------------------
+    HEADER CODE - START
+    ---------------------------------------------- 
+-->
+
+
+    <div class="header">
     
-                <div>
+
+        <button style="padding:8px; border: 1px solid black;background-color: #ae943f; border-radius: 8px;margin-left:50px;margin-top:20px; display:flex; ">
+            <a style="text-decoration:none; color: black;" href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i> Go Back</a>
+            
+        </button>
+
+<button style="background-color:#ae943f; float:right; margin-top: 10px; margin-right:20px;padding:5px;border-radius: 8px;">
+                  <a  style="float:right ; text-decoration:none;color:black; " href="login-api.php?api=LogOut">Logout</a>
+                </button>
+<br>
+
+
+
+
+        <h1 style=" margin: auto;
+   width: 800px; font-weight: 900; color: #ae943f;">
+            <i class="fas fa-file-invoice"></i>
+
+            Invoice page
+
+        </h1>
+    </div>
+    
+
+    <!-- 
+    ----------------------------------------------
+    HEADER CODE - END
+    ---------------------------------------------- 
+-->
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+                <!-- <div>
                  
                     <h2>
                     <i class="fas fa-file-invoice"></i>
@@ -41,10 +104,8 @@
                      <button  style="padding:8px; border: 1px solid black;background-color: #ae943f; margin-left: 20px; border-radius: 8px; " >
                       <a  style="text-decoration:none; color: black;"  href=""><i class="fa fa-arrow-left" aria-hidden="true"></i> Go Back</a>
                      </button>
-                </div>
-                <button style="background-color:#ae943f; float:right; margin-top: 10px; margin-right:20px;padding:5px;border-radius: 8px;">
-                  <a  style="float:right ; text-decoration:none;color:black; " href="login-api.php?api=LogOut">Logout</a>
-                </button>
+                </div> -->
+                
 
                 
                 <button  style="background-color:#ae943f;  margin-top: 10px;    margin-left:700px; margin-right:20px;padding:10px; border-radius: 8px; cursor:pointer "     onclick="window.location.href='invoicelist.page.php'"  class="btn"><i class="fa fa-bars">

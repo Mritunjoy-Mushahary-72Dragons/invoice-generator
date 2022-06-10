@@ -127,7 +127,6 @@
             width: 100%;
             font-size: 13px;
             color: #ae943f;
-            ;
             white-space: nowrap;
             border-collapse: collapse;
         }
@@ -136,7 +135,7 @@
             background-color: #800000;
             ;
             color: #fff;
-            height: 80px;
+            height: 150px;
         }
 
         table>thead th {
