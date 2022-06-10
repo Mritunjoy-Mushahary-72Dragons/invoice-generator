@@ -107,11 +107,18 @@
                 max-width: 400px;
                 border: 1px solid #00bcd4;
                 background-color: #efefef33;
-                padding: 15px;
+                padding: 1px;
                 overflow: auto;
                 margin: auto;
                 border-radius: 4px;
             }
+
+
+            table th,
+        table td {
+            border: 1px solid #00000017;
+            padding: 10px 15px;
+        }
 
         }
 
@@ -129,6 +136,7 @@
             background-color: #800000;
             ;
             color: #fff;
+            height: 80px;
         }
 
         table>thead th {
@@ -244,14 +252,20 @@
                 <tr>
                     <th>Id</th>
                     <th>Title</th>
+                    <th>Location</th>
+                    <th>Date</th>
                     <th>Changes</th>
+                   
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>01</td>
-
                     <td>xyz</td>
+                    <td>xyz</td>
+                    <td>xyz</td>
+                    
+
 
 
                     <td>
@@ -266,6 +280,8 @@
                 <tr>
                     <td>02</td>
                     <td>xyz</td>
+                    <td>xyz</td>
+                    <td>xyz</td>
 
 
                     <td>
@@ -278,6 +294,8 @@
                 </tr>
                 <tr>
                     <td>03</td>
+                    <td>xyz</td>
+                    <td>xyz</td>
                     <td>xyz</td>
 
                     <td>
