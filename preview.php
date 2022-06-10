@@ -6,35 +6,9 @@
     ---------------------------------------------- 
 -->
 <!-- THIS IS WORKING -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preview page</title>
-</head>
-<style>
-    background
-</style>
-<body>
-<div class="header">
-        <button style="padding:8px; border: 1px solid black;background-color: #ae943f; border-radius: 8px; ">
-            <a style="text-decoration:none; color: black;" href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i> Go Back</a>
-        </button>
 
-
-        <h1 style=" margin: auto;
-   width: 200px; font-weight: 900; color: #ae943f; ">
-            <i class="fas fa-file-invoice"></i>
-
-            Invoice List Page
-
-        </h1>
-    </div>
-</body>
-</html>
-
+        
+  
 
 <!-- 
     ----------------------------------------------
@@ -47,7 +21,7 @@
 
 
 
-                    <!-- <a class="new" href="invoice.php">Create a New Invoice</a>
+                     <!-- <a class="new" href="invoice.php">Create a New Invoice</a>
 <center>
 <div id="main"> -->
 <?php
