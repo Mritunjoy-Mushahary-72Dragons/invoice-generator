@@ -30,70 +30,110 @@
   <link rel="stylesheet" href="/css/all.min.css" >
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-.header {
-            overflow: hidden;
-            background-color: #800000;
-            padding: 8px 10px;
-        }
+    .header-2 {
+        overflow: auto;
+        background-color: #800000;
+        padding: 8px 10px;
+        display:flex;
+        flex-direction:row;
+        padding:14px;
+        width:100%;
+    }
+    .header-2 div:nth-child(1){
+      flex:20%;
+    }
+    .header-2 div:nth-child(2){
+      flex:60%;
+      
+    }
+    .header-2 div:nth-child(3){
+      flex:20%;
+    }
+    .header-h {
+        margin-right: 100px;
+        color: black;
+        font-size: 18px;
+        text-align:center;
 
-        .header h1 {
-            margin-right: 100px;
-            float: right;
-            color: black;
-            font-size: 18px;
+    }
 
-        }
+    .header-btn-1{
+      padding:8px; 
+      border: 1px solid black;
+      background-color: #ae943f; 
+      border-radius: 8px;
+      float:left;
+    }
+    .header-btn-1 a{
+      text-decoration:none; 
+      color: black;
+    }
+    .header-h{
+      margin: auto;
+      font-weight: 900; 
+      color: #ae943f;
+      font-size:25px;
+    }
+    
+    .header-btn-2{
+      background-color:#ae943f; 
+      margin-right:20px;
+      padding:5px;
+      border-radius: 8px;
+      float:right;
+    }
+    .header-btn-2 a{
+      text-decoration:none;
+      color:black;
+      
+    }
+
+    #icon {
+      vertical-align: middle;
+      font-size: 30px;
+    }
 
   </style>
 </head>
-<br>
-
-
-    <body class="inv">
+<body class="inv">
 
    <!-- 
-    ----------------------------------------------
-    HEADER CODE - START
-    ---------------------------------------------- 
--->
+      ----------------------------------------------
+      HEADER CODE - START
+      ---------------------------------------------- 
+  -->
+  <div>
+    <div class="header-2">
 
-
-    <div class="header">
-    
-
-        <button style="padding:8px; border: 1px solid black;background-color: #ae943f; border-radius: 8px;margin-left:50px;margin-top:20px; display:flex; ">
-            <a style="text-decoration:none; color: black;" href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i> Go Back</a>
-            
+      <div>
+        <button class="header-btn-1">
+          <a href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i> Go Back</a>
         </button>
+      </div>
 
-<button style="background-color:#ae943f; float:right; margin-top: 10px; margin-right:20px;padding:5px;border-radius: 8px;">
-                  <a  style="float:right ; text-decoration:none;color:black; " href="login-api.php?api=LogOut">Logout</a>
-                </button>
-<br>
-
-
-
-
-        <h1 style=" margin: auto;
-   width: 800px; font-weight: 900; color: #ae943f;">
-            <i class="fas fa-file-invoice"></i>
-
-            Invoice page
-
+      <div>
+        <h1 class="header-h">
+          <i class="fas fa-file-invoice"></i>
+          Invoice page
         </h1>
+      </div>
+
+      <div>
+        <button class="header-btn-2">
+          <a href="login-api.php?api=LogOut">Logout</a>
+        </button>
+      </div>
+
     </div>
+  </div>
+  
     
+  <!-- 
+      ----------------------------------------------
+      HEADER CODE - END
+      ---------------------------------------------- 
+  -->
 
-    <!-- 
-    ----------------------------------------------
-    HEADER CODE - END
-    ---------------------------------------------- 
--->
-
-    <br>
-    <br>
-    <br>
-    <br>
 
 
                 <!-- <div>
@@ -108,22 +148,15 @@
                 
 
                 
-                <button  style="background-color:#ae943f;  margin-top: 10px;    margin-left:700px; margin-right:20px;padding:10px; border-radius: 8px; cursor:pointer "     onclick="window.location.href='invoicelist.page.php'"  class="btn"><i class="fa fa-bars">
-                  
-                </i> Invoice List</button>
+          <div style="text-align:center;padding:10px;">
+            <button  style="background-color:#ae943f;padding:10px;border-radius: 8px;cursor:pointer"     onclick="window.location.href='invoicelist.page.php'"  class="btn">
+              <i class="fa fa-bars"></i> Invoice List
+            </button>
+          </div>
 
 
-
-
-                <style>
-                  #icon {
-        vertical-align: middle;
-        font-size: 30px;
-      }
-                </style>
-
-
-<input type="hidden" name="bill_id" value="<?php echo $_GET['invoice_id']; ?>">
+        <input type="hidden" name="bill_id" value="<?php echo $_GET['invoice_id']; ?>">
+        
         <div class="input-group">
                 <label class="profile-info">Date:</label>
                 <?php 
