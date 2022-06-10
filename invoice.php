@@ -27,14 +27,27 @@ if(!isset($_SESSION['user_id']))
     <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
     integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/css/all.min.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
     <body class="inv">
                 <div>
-                    <h2>Invoice Generator</h2>
+                  
+                    <h2> Invoice Generator</h2>
+                   
                 </div>
-                <button style="background-color:gold; float:right; margin-top: 10px; margin-right:20px;padding:3px">
+                <button style="background-color:gold; float:right; margin-top: 10px; margin-right:20px;padding:5px">
                   <a  style="float:right ; text-decoration:none; color:black;background-color:gold ;border: radius 2px;" href="login-api.php?api=LogOut">Logout</a>
                 </button>
+
+                
+                <button  style="background-color:gold;  margin-top: 10px;    margin-left:700px; margin-right:20px;padding:10px"     onclick="window.location.href='invoicelist.page.php'"  class="btn"><i class="fa fa-bars">
+                  
+                </i> Invoice List</button>
+
+
+
+
 <input type="hidden" name="bill_id" value="<?php echo $_GET['invoice_id']; ?>">
         <div class="input-group">
                 <label class="profile-info">Date:</label>
