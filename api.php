@@ -154,7 +154,7 @@ $data.='<div class="contain"><table  style="margin: auto;"> <tr>
 				  </tr>
 				   <tr class="tr_fst">
 				    <td colspan="3" style="border-right: 0px solid;">'.$value['billed_from'].'</td>
-				    <td style="border-left: 0px solid;"><img src="72logo.png" style="width: 100px; float: right;"></td>
+				    <td style="border-left: 0px solid;"><img src="img/72logo.png" style="width: 100px; float: right;"></td>
 				  </tr>
 				  <tr>
 				  	<td colspan="4" style="padding: 18px;"></td>
@@ -191,7 +191,7 @@ $data.='<div class="contain"><table  style="margin: auto;"> <tr>
 				  </tr>
 				 <tr class="tr_fst">
 				    <td colspan="3" style="border-right: 0px solid;">'.$value['billed_from'].'</td>
-				    <td style="border-left: 0px solid;"><img src="72logo.png" style="width: 100px; float: right;padding-right: 0px;"></td>
+				    <td style="border-left: 0px solid;"><img src="img/72logo.png" style="width: 100px; float: right;padding-right: 0px;"></td>
 				  </tr>
 				 <tr>
 				  	<td colspan="4" style="padding: 18px;"></td>

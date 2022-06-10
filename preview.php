@@ -9,12 +9,16 @@ include "api.php";
 if(isset($_GET['invoice_id']))
 {
 //print_r($_GET);
+
+
                   $obj=new sheet();
                   $_POST['invoice_id']=$_GET['invoice_id'];
                   $main_data=$obj->list_invoice($_POST);
-                  echo $table= $obj->table_insert($main_data);
-                  // echo "<pre>";  
-                  // print_r($table);
+                  $table= $obj->table_insert($main_data);
+
+
+                  // echo "<pre>";
+                  print_r($table);
 }
 ?>
 </div>
@@ -40,7 +44,7 @@ function del(id)
                   }
                         else
                         {
-                         alert("Invoice Bill Is Not Deleted");   
+                         alert("Invoice Bill Is Not Deleted");
                         }
                         },
                         error: function (data) {
@@ -52,7 +56,7 @@ function del(id)
 
 }
 
-  
+
 </script>
 </body>
 </html>
