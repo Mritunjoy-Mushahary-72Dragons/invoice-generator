@@ -90,11 +90,12 @@
 
         .table_responsive {
             max-width: 800px;
-            border: 1px solid #00bcd4;
+            border: 1px solid #ae943f;
             background-color: #efefef33;
             padding: 5px;
             overflow: auto;
             margin: auto;
+            margin-top: 50px;
             border-radius: 4px;
         }
 
@@ -110,15 +111,16 @@
                 padding: 1px;
                 overflow: auto;
                 margin: auto;
+                margin-top: 20px;
                 border-radius: 4px;
             }
 
 
             table th,
-        table td {
-            border: 1px solid #00000017;
-            padding: 10px 15px;
-        }
+            table td {
+                border: 1px solid #00000017;
+                padding: 10px 15px;
+            }
 
         }
 
@@ -233,9 +235,6 @@
 
 
 
-    <br>
-    <br>
-    <br>
 
 
 
@@ -249,12 +248,12 @@
         <table>
             <thead>
                 <tr>
-                    <th>Id</th>
-                    <th>Title</th>
-                    <th>Location</th>
-                    <th>Date</th>
-                    <th>Changes</th>
-                   
+                    <th><i class="fa fa-id-card" aria-hidden="true"></i>  Id</th>
+                    <th> <i class="fas fa-heading"></i> Title</th>
+                    <th><i class="fa fa-map-marker" aria-hidden="true"></i> Location</th>
+                    <th> <i class="fa fa-calendar" aria-hidden="true"></i> Date</th>
+                    <th><i class="fas fa-edit"></i> <i class="fa fa-trash" aria-hidden="true"></i> <i class="fa fa-eye" aria-hidden="true"></i> Changes</th>
+
                 </tr>
             </thead>
             <tbody>
@@ -263,7 +262,7 @@
                     <td>xyz</td>
                     <td>xyz</td>
                     <td>xyz</td>
-                    
+
 
 
 

@@ -120,7 +120,7 @@
 
       <div>
         <button class="header-btn-2">
-          <a href="login-api.php?api=LogOut">Logout</a>
+          <a href="login-api.php?api=LogOut"> <i class="fa fa-power-off" aria-hidden="true"></i> Logout</a>
         </button>
       </div>
 
@@ -157,7 +157,11 @@
 
         <input type="hidden" name="bill_id" value="<?php echo $_GET['invoice_id']; ?>">
         
-        <div class="input-group">
+
+        
+          
+        
+        <div class="input-group" >
                 <label class="profile-info">Date:</label>
                 <?php 
                if(isset($_GET['invoice_id']))
@@ -372,8 +376,7 @@ else
                     <button type="submit" class="user-btn bill-btn"><a href="http://45.76.160.28:5000/Invoice_sheet/bill_detail.php" style="text-decoration: none;color: #000000;">Bill Detail</a></button>
                 </div>
         </div>
-    
-    
+       
      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <?php 
 if(!isset($_GET['invoice_id']))

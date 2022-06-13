@@ -1,8 +1,11 @@
 body{
+    
     padding: 0px;
     margin: 0px;
 }
 .inv{
+     width: 100%;
+     height: auto;
      background-color: #000000;
 }
 h2{
@@ -130,7 +133,7 @@ hr{
     margin-top: 91px;
 }
 
-}
+
 h4{
     margin-left: 370px;
 }
@@ -230,38 +233,17 @@ h4{
         }
  
 
-    @media screen and (min-device-width: 768px) and (max-device-width: 1024px){
-
-    .input-group{
-        margin-left: 70px;
-        margin-right: 64px;
-        padding: 30px;
-        margin-top: 83px;
-        }
-        .mark{
-        top: 4px;
-        left: 344px;
-        }
-        .cross-peer {
-            margin-left: 516px;
-            margin-top: -70px;
-        }
-       
-
-}
-@media screen and (min-device-width: 414px) and (max-device-width: 768px){
-
-    .input-group {
- 
-    border-radius: 5px;
-    padding: 20px;
-    margin-left: 28px;
-    margin-right: 20px;
-    
-    }
-
-    .mark {
-    top: 20px;
-    left: 38px;
-    }
-}
+        @media only screen and (max-width: 414px) {
+            input[type=date], input[type=text], select{
+               height: 20px;
+                padding: 5px;
+                border: 1px solid #ad9440;
+                border-radius: 4px;
+                background-color: #000000;
+                color: #ad9440;
+                
+                margin-bottom: 15px; 
+                margin-top: 12px;
+              }
+              
+          }
